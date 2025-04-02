@@ -1,42 +1,106 @@
+:root {
+  --white-bg: #fafafa;
+  --gray-card-bg: #eeeeee;
+  --black: #000;
+  --shop-bg: #3a3a3a;
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   border: none;
+  font-family: "Montserrat", sans-serif;
 }
 body {
   min-height: 100vh;
-  background-color: #238c58;
+  background-color: var(--white-bg);
 }
 .container {
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
-  padding: 1rem 0rem;
+  padding: 0.5rem 0rem;
 }
+
 nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  user-select: none;
 }
 nav ul {
   list-style: none;
+  justify-self: center;
+  padding-right: 3.8em;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 3rem;
   text-transform: capitalize;
-  font-size: 1.2rem;
+  font-size: 1rem;
+  font-weight: 550;
+  color: var(--black);
+}
+a:visited {
+  color: inherit;
 }
 nav li {
 }
 .nav-logo {
-  max-width: 50px;
-  border-radius: 50%;
+  max-width: 100%;
 }
-.menu-icon {
-  max-width: 30px;
+.shopping-basket-icon {
+  max-width: 35px;
 }
 .nav-pages {
   text-decoration: none;
+}
+/* Nav styilng end */
+/* Home page styling start*/
+.home-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3.5em;
+  padding-top: 4em;
+}
+.home-page h1 {
+  font-family: "Boldonse", system-ui;
+  letter-spacing: 7px;
+  max-width: 700px;
+  font-size: 5rem;
+  text-align: center;
+  padding: 1rem 0.7em;
+  color: var(--white-bg);
+  background-color: var(--black);
+}
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.2rem;
+  max-width: 150px;
+  height: auto;
+  padding: 0 0.8em 0.8em 0.8em;
+  background-color: var(--gray-card-bg);
+  border-radius: 5px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+.card h2 {
+  font-size: 1rem;
+  align-self: flex-start;
+}
+.card p {
+  font-size: 0.6rem;
+  align-self: flex-start;
+}
+.card-juice-image {
+  max-width: 100%;
+  object-fit: cover;
 }
