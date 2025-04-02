@@ -6,6 +6,7 @@
   --gray-card-bg: #eeeeee;
   --black: #000;
   --shop-bg: #282828;
+  --bg-overlay: rgba(35, 35, 35, 0.811);
 }
 * {
   margin: 0;
@@ -47,8 +48,7 @@ nav ul {
 a:visited {
   color: inherit;
 }
-nav li {
-}
+
 .nav-logo {
   max-width: 100%;
 }
@@ -64,8 +64,9 @@ nav li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 3.5em;
+  gap: 5em;
   padding-top: 4em;
+  padding-bottom: 5em;
 }
 .home-page h1 {
   font-family: "Boldonse", system-ui;
@@ -112,13 +113,20 @@ nav li {
 /* Shop Page Styling start*/
 .shop-bg-color {
   background-color: var(--shop-bg);
+  padding-bottom: 7em;
 }
 .shop-page {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 5rem;
+  margin-top: 7em;
+  gap: 6em;
+}
+.highlights-shop {
+  display: flex;
+  flex-direction: column;
+  gap: 5em;
 }
 .highlights-title {
   display: flex;
@@ -159,4 +167,72 @@ nav li {
   font-size: 0.8rem;
   font-weight: 550;
   color: var(--white-secondary-text);
+}
+/*Best Sellers Shop section Styling start*/
+.best-sellers-shop {
+  display: flex;
+  flex-direction: column;
+  gap: 5em;
+}
+.best-sellers-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.best-sellers-title h1 {
+  font-size: 2rem;
+  color: var(--text);
+}
+.best-sellers-all-product-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+.best-sellers-product-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+}
+.product-description-best-sellers {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4em;
+  color: var(--white-text);
+}
+.best-sellers-product-img {
+  max-width: 70%;
+}
+.product-description-best-sellers h2 {
+  font-size: 1rem;
+  font-weight: 800;
+  align-self: center;
+}
+.product-description-best-sellers span {
+  align-self: center;
+  font-size: 0.8rem;
+  font-weight: 550;
+  color: var(--white-secondary-text);
+}
+.inbetween-reviews {
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+}
+.inbetween-reviews::after {
+  content: "";
+  position: absolute;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--bg-overlay);
+}
+.inbetween-reviews h1 {
+  font-size: 5rem;
+  z-index: 10;
+}
+.inbetween-reviews-bg {
+  max-width: 100%;
+  height: auto;
 }
