@@ -7,6 +7,10 @@
   --black: #000;
   --shop-bg: #282828;
   --bg-overlay: rgba(35, 35, 35, 0.811);
+  --gradient-text: linear-gradient(240deg, #ff7f50, #ffab40, #e08714);
+  /*reviews*/
+  --bg-instagram-reviews-color: #444444;
+  --bg-reviews-color: #363636;
 }
 * {
   margin: 0;
@@ -221,7 +225,6 @@ a:visited {
 .inbetween-reviews::after {
   content: "";
   position: absolute;
-  position: absolute;
   top: 0;
   left: 0;
   right: 0;
@@ -229,10 +232,91 @@ a:visited {
   background-color: var(--bg-overlay);
 }
 .inbetween-reviews h1 {
-  font-size: 5rem;
-  z-index: 10;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: var(--white-text);
+  font-size: 4rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  z-index: 1;
+  width: 80%;
+}
+.inbetween-reviews span {
+  -webkit-text-fill-color: transparent;
+  background: var(--gradient-text);
+  -webkit-background-clip: text;
+  font-weight: 800;
 }
 .inbetween-reviews-bg {
   max-width: 100%;
   height: auto;
+}
+.reviews-page {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.instagram-reviews-bg {
+  background-color: var(--bg-instagram-reviews-color);
+}
+.instagram-reviews {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 3em;
+  gap: 5em;
+}
+.social-media-reviews {
+  position: absolute;
+}
+.whatsapp-reviews-icon {
+  width: 30px;
+}
+.x-reviews-icon {
+}
+.instagram-reviews h1 {
+  text-align: center;
+  font-size: 2rem;
+  color: var(--white-text);
+}
+.instagram-reviews-cards-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 1fr;
+  gap: 10em;
+}
+.instagram-reviews-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 300px;
+  background-color: var(--bg-reviews-color);
+  border-radius: 10px;
+  padding: 2em;
+  gap: 2em;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+.quote-icon {
+  width: 30px;
+  justify-self: flex-start;
+}
+.instagram-reviews-card p {
+  font-size: 0.8rem;
+  align-self: flex-start;
+  justify-self: flex-start;
+  text-align: center;
+  color: var(--white-text);
+  font-weight: 600;
+}
+.instagram-reviews-pfp {
+  max-width: 40px;
+  border-radius: 50%;
+}
+.instagram-reviews-user {
+  font-size: 0.4rem;
+  color: var(--white-text);
 }
