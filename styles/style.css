@@ -5,6 +5,7 @@
   --white-secondary-text: rgb(214, 214, 214);
   --gray-card-bg: #eeeeee;
   --black: #000;
+  /*shop*/
   --shop-bg: #282828;
   --bg-overlay: rgba(35, 35, 35, 0.811);
   --gradient-bg: linear-gradient(40deg, #f9ce34, #ee2a7b, #6228d7);
@@ -21,6 +22,10 @@
   );
   --bg-yelp-reviews-card-color: rgb(254, 112, 102);
   --text-yelp-reviews: #2d0101;
+  /*footer*/
+  --bg-foooter-color: #141414;
+  --footer-main-text-color: #e0e0e0;
+  --footer-secondary-text-color: #c8c8c8;
 }
 * {
   margin: 0;
@@ -460,4 +465,88 @@ a:visited {
   width: 1em;
   padding-top: 0.2em;
   align-self: center;
+}
+/*about page styling end*/
+/*footer styling start*/
+footer {
+  background-color: var(--bg-foooter-color);
+  color: var(--footer-main-text-color);
+  padding: 6em 0;
+}
+.footer-content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.footer-lists {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  align-items: flex-start;
+  gap: 1em;
+}
+.footer-list-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-transform: capitalize;
+  gap: 1.3em;
+}
+.footer-list-content ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 1em;
+}
+.footer-list-content h1 {
+  font-size: 1rem;
+  padding-bottom: 0.3em;
+  border-bottom: 0.1rem solid var(--footer-secondary-text-color);
+  font-weight: 700;
+}
+.footer-list-content li {
+  font-size: 0.8rem;
+  color: var(--footer-secondary-text-color);
+  font-weight: 400;
+}
+
+footer hr {
+  height: 1px;
+  border-radius: 10px;
+  background-color: #6f6f6f;
+  margin: 3em 0;
+  opacity: 0.5;
+}
+.footer-social-media {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: flex-start;
+  gap: 1.5em;
+  white-space: nowrap;
+}
+.footer-term-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2em;
+}
+.footer-term-list li {
+  font-size: 0.85rem;
+  color: var(--footer-secondary-text-color);
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.footer-social-media-icons {
+  display: flex;
+  align-self: flex-start;
+  align-items: center;
+  gap: 1em;
+}
+.footer-social-media-icons img {
+  width: 28px;
+  opacity: 0.8;
 }
