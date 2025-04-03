@@ -273,7 +273,7 @@ a:visited {
 .social-media-reviews {
   position: absolute;
   right: 5em;
-  top: 29em;
+  top: 31.5em;
   display: flex;
   flex-direction: column;
   gap: 2em;
@@ -286,7 +286,7 @@ a:visited {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-top: 3em;
+  padding-top: 6em;
   padding-bottom: 5em;
   gap: 5em;
   min-height: 100vh;
@@ -349,8 +349,8 @@ a:visited {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-top: 2em;
-  padding-bottom: 5em;
+  padding-top: 6em;
+  padding-bottom: 10em;
   gap: 5em;
   min-height: 100vh;
 }
@@ -404,4 +404,60 @@ a:visited {
 .yelp-reviews-user {
   font-size: 0.4rem;
   color: var(--text-yelp-reviews);
+}
+/*reviews page styling end*/
+/*about page styling start*/
+.about-page {
+  padding-top: 2em;
+  padding-bottom: 2em;
+  min-height: 100vh;
+}
+.about-page-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.about-us {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+}
+.about-juice-image {
+  max-width: 500px;
+}
+.about-us h1 {
+  text-align: center;
+  font-size: 3rem;
+  text-transform: capitalize;
+}
+.about-us p {
+  font-size: 1rem;
+  line-height: 1.6rem;
+}
+.about-us p span {
+  font-weight: 700;
+}
+.about-page-button {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: orange;
+  border-radius: 20em;
+  width: 35%;
+  padding: 1em 1em;
+}
+.about-page-button button {
+  border: none;
+  background-color: transparent;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: var(--black);
+}
+.about-page-button img {
+  width: 1em;
+  padding-top: 0.2em;
+  align-self: center;
 }
