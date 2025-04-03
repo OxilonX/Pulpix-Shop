@@ -127,6 +127,7 @@ a:visited {
   background-color: var(--gray-card-bg);
   border-radius: 5px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  user-select: none;
   transition: all 0.2s ease-in;
 }
 .card:hover {
@@ -331,6 +332,13 @@ a:visited {
   display: flex;
   flex-direction: column;
   gap: 3em;
+  z-index: 100;
+}
+.social-media-reviews img {
+  transition: all 0.1s ease-in;
+}
+.social-media-reviews img:hover {
+  transform: scale(1.1);
 }
 .instagram-reviews-bg {
   background: var(--bg-insta-reviews-color);
@@ -586,6 +594,9 @@ footer {
 .footer-list-content li:hover {
   color: white;
 }
+.footer-list-content li:active {
+  opacity: 0.7;
+}
 
 footer hr {
   height: 1px;
@@ -619,6 +630,9 @@ footer hr {
 }
 .footer-term-list li:hover {
   color: white;
+}
+.footer-term-list li:active {
+  opacity: 0.7;
 }
 .footer-social-media-icons {
   display: flex;
