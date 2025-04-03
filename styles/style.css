@@ -81,7 +81,7 @@ a {
   text-decoration: none;
 }
 a:visited {
-  color: inherit;
+  color: var(--black);
 }
 
 .nav-logo {
