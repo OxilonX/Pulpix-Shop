@@ -33,6 +33,7 @@
   box-sizing: border-box;
   border: none;
   font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
 }
 body {
   min-height: 100vh;
