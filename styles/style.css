@@ -77,6 +77,9 @@ nav ul li:hover {
 nav ul li:active {
   opacity: 0.5;
 }
+a {
+  text-decoration: none;
+}
 a:visited {
   color: inherit;
 }
@@ -488,7 +491,7 @@ a:visited {
 /*about page styling start*/
 .about-page {
   padding-top: 7em;
-  padding-bottom: 7em;
+  padding-bottom: 9em;
   min-height: 100vh;
 }
 .about-page-content {
