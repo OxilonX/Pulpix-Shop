@@ -1,3 +1,4 @@
+/*Variables*/
 :root {
   --text: white;
   --white-bg: #fafafa;
@@ -27,6 +28,7 @@
   --footer-main-text-color: #e0e0e0;
   --footer-secondary-text-color: #c8c8c8;
 }
+/*General styling*/
 * {
   margin: 0;
   padding: 0;
@@ -45,7 +47,7 @@ body {
   margin-right: auto;
   padding: 0.5rem 1em;
 }
-
+/*Header styling start*/
 nav {
   display: flex;
   align-items: center;
@@ -99,7 +101,7 @@ a:link {
 .nav-pages {
   text-decoration: none;
 }
-/* Nav styilng end */
+/* Header styilng end */
 /* Home page styling start*/
 .home-page {
   display: flex;
@@ -177,6 +179,7 @@ a:link {
   gap: 6em;
   z-index: 3;
 }
+/*Highligt section styling start*/
 .highlights-shop {
   display: flex;
   flex-direction: column;
@@ -291,6 +294,8 @@ a:link {
   font-weight: 550;
   color: var(--white-secondary-text);
 }
+/*Shop page styling end*/
+/*reviews page styilng start*/
 .inbetween-reviews {
   position: relative;
   min-height: 300px;
@@ -669,7 +674,7 @@ footer hr {
   transform: scale(1.1);
 }
 /*Footer styling end*/
-/*mobile*/
+/*Desktop Break*/
 @media (max-width: 850px) {
   .home-page h1 {
     font-size: 4rem;
@@ -714,6 +719,7 @@ footer hr {
     height: 2.5em;
   }
 }
+/*Tablets*/
 @media (max-width: 650px) {
   nav ul {
     display: none;
@@ -765,6 +771,7 @@ footer hr {
     width: 100%;
   }
 }
+/*S-Tablets*/
 @media (max-width: 500px) {
   .container {
     margin: 0;
@@ -837,6 +844,7 @@ footer hr {
     grid-template-columns: repeat(1, 1fr);
   }
 }
+/*L-mobile*/
 @media (max-width: 400px) {
   .about-juice-image {
     max-width: 300px;
@@ -862,6 +870,7 @@ footer hr {
     font-size: 0.7rem;
   }
 }
+/*S-mobile*/
 @media (max-width: 350px) {
   .container {
     margin: 0;
